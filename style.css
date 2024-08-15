@@ -4,15 +4,12 @@ body{
     user-select: none;
     background-color: rgb(206, 206, 206);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 main{
     width: 100%;
     max-width: 60rem;
     margin: 0 auto;
-    position: absolute;
-    
+    margin-top: 12rem;    
 }
 main .card{
     display: flex;
@@ -105,12 +102,16 @@ main .rightDiv p{
         max-width: 100%;
     }
     .leftDiv{
-        padding: 0rem;
+        gap: 1rem;
+        padding: 4rem 3rem !important;
+        font-size: medium !important;
+
     }
+    
     
 }
 
-@media screen and (max-width:348px) {
+@media screen and (max-width:379px) {
     
     .formRow{
         flex-direction: column;
