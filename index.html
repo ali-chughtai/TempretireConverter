@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Converter</title>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="leftDiv">
+          <h4>Enter Tempreture</h4>
+          <form action="#">
+            <label for="Degree">Degree</label>
+            <div class="formRow">
+              <input type="number" value="0" />
+              <select name="currentState" id="currentState">
+                <option value="Celcuis" style="display: none" selected>
+                  &deg;C
+                </option>
+                <option value="Farenheit">&deg;F</option>
+                <option value="Kelvin">&deg;K</option>
+              </select>
+            </div>
+          </form>
+          <form action="#">
+            <label for="convertIn">Convert In</label>
+            <select name="convertIn" id="convertIn">
+              <option value="Farenheit" style="display: none" selected>
+                Farenheit (&deg;F)
+              </option>
+              <option value="Celcuis">Celcuis (&deg;C)</option>
+              <option value="Kelvin">Kelvin (&deg;K)</option>
+            </select>
+          </form>
+          <button id="convert">
+            Convert
+            <svg fill="#ffffff" width="14px" height="14px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path></g></svg>
+          </button>
+        </div>
+        <div class="rightDiv">
+          <h1 id="output">0</h1>
+          <p>&deg;</p>
+          <p id="state">F</p>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

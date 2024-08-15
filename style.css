@@ -1,0 +1,85 @@
+body{
+    padding: 0.5rem;
+    margin: 0;
+    user-select: none;
+    background-color: rgb(206, 206, 206);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+main{
+    width: 100%;
+    max-width: 50rem;
+    margin: 5rem auto;
+}
+main .card{
+    display: flex;
+    background-color: #007B83;
+    border-radius: 5px;
+    
+}
+main .card div{
+    flex-basis: 50%;
+}
+main .card .rightDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: x-large;
+}
+main .card .leftDiv{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    background-color: white;
+    margin: 0.15rem;
+    padding: 4rem 3rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+main .card .leftDiv h4{
+margin: 0;
+padding: 0;
+}
+main .card .leftDiv form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+main .card .leftDiv .formRow {
+display: flex;
+gap: 0.1rem;
+}
+input{
+    flex: 1;
+}
+input, select{
+    border: 2px solid rgb(211, 210, 210);
+    border-radius: 5px;
+    padding: 0.2rem;
+}
+input:focus, select:focus{
+    border: 2px solid rgb(198, 198, 255);
+    outline: none;
+    border-radius: 5px;
+}
+main .card button{
+    /* width: 30%; */
+    align-self: center;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #007B83;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+main .rightDiv p{
+    margin-top: -1rem;
+}
+
+
